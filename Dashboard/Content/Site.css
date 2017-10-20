@@ -1,0 +1,62 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.canvasGraph{
+    width:20%;
+    height: 20%;
+}
+
+.numberZone {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.cardCustom{
+    background-color:ghostwhite;
+    width: auto;
+    margin:20px;
+    max-width:500px;
+
+}
+.cardCustom h2{
+    margin: auto;
+    text-align:center;
+}
+
+.resultNumber{
+    display: flex;
+    flex-flow: row wrap;
+    margin:5px;
+    
+}
+.value{
+    text-align:center;
+    margin:auto;
+    width:100%;
+}
+
+.card-body{
+    margin:5px;
+
+}

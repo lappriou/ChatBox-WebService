@@ -1,0 +1,39 @@
+{
+  "Items": [
+    {
+      "Analyzer": "UnusedMethodsAnalyzer",
+      "OccurrenceCount": 189,
+      "Exceptions": null,
+      "SentToServer": true,
+      "InstallationName": "DESKTOP-H04HQ3Q"
+    },
+    {
+      "Analyzer": "AsyncAwaitMethodAnalyzer",
+      "OccurrenceCount": 23,
+      "Exceptions": null,
+      "SentToServer": true,
+      "InstallationName": "DESKTOP-H04HQ3Q"
+    },
+    {
+      "Analyzer": "UseStringCollectionIntersectsAnalyzer",
+      "OccurrenceCount": 1,
+      "Exceptions": null,
+      "SentToServer": true,
+      "InstallationName": "DESKTOP-H04HQ3Q"
+    },
+    {
+      "Analyzer": "LongMethodAnalyzer",
+      "OccurrenceCount": 3,
+      "Exceptions": null,
+      "SentToServer": true,
+      "InstallationName": "DESKTOP-H04HQ3Q"
+    },
+    {
+      "Analyzer": "ResultAsVariableNameAnalyzer",
+      "OccurrenceCount": 1,
+      "Exceptions": null,
+      "SentToServer": true,
+      "InstallationName": "DESKTOP-H04HQ3Q"
+    }
+  ]
+}

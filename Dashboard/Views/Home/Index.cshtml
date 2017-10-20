@@ -1,0 +1,39 @@
+﻿@model Dashboard.ViewModels.Home.IndexViewModel
+@using Chart.Mvc.SimpleChart
+@using Chart.Mvc.Extensions;
+
+
+
+<h1><span class="label @(Model.RaclettePollsList.Count >= Model.MinNumber? "label-success" : "label-danger")">@(Model.RaclettePollsList.Count) sondages sur @(Model.MinNumber) ont été remplis</span></h1>
+<div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: @(Model.PercentGoal)%;" aria-valuenow="@(Model.PercentGoal)" aria-valuemin="0" aria-valuemax="100">@(Model.PercentGoal)%</div>
+</div>
+<h1>Quelques chiffres...</h1>
+<div class="numberZone">
+    @foreach (var item in Model.ListCards)
+    {
+        <div class="cardCustom">
+            <h2> <span class="label label-default ">@item.Title</span> </h2>
+            <div>
+                <div class="resultNumber">
+                    @foreach (var info in item.NumberResult)
+                {
+                        <div class="card-body">
+                            <h3><span class="label badge badge-pill badge-dark">@info.Key</span></h3>
+                            <p style="background-color: @(info.Color.Name)" class="value">@info.Value</p>
+
+                            
+                        </div>
+                    }
+                    @if (item.GraphResult.GraphElement != null)
+                    {
+                    <canvas class="canvasGraph" id="myChart@(item.Title.Replace(' ','_'))"></canvas>
+
+                    @Html.CreateChart("myChart" + item.Title.Replace(' ', '_'), item.GraphResult.GraphElement);
+                    }
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

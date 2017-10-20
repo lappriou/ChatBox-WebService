@@ -1,0 +1,41 @@
+﻿@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+.social {
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    background: rgb(255,255,255);
+    border: 1px solid rgb(204,204,204);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 100px;
+    margin: 0 10px 10px 0;
+    padding: 19px;
+}
+
+.facebook:hover {
+    background: #3b5998;
+    color: #FFF;
+}
+
+.twitter:hover {
+    background: #00acee;
+    color: #FFF;
+}
+.skype:hover {
+    background: #00aff0;
+    color: #FFF;
+}
+.alert {
+    background: #034ea2 !important;
+    background: -moz-linear-gradient(-45deg, #034ea2 0%, #0095da 100%) !important;
+    background: -webkit-linear-gradient(-45deg, #034ea2 0%, #0095da 100%) !important;
+    background: linear-gradient(135deg, #034ea2 0%, #0095da 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#034ea2', endColorstr='#0095da', GradientType=1 ) !important;
+    position: relative !important;
+    top: 0px;
+    color: white !important;
+}
+.container {
+    /*border: 1px solid #034ea2;*/
+}
+
